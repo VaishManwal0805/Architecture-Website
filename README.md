@@ -8,7 +8,6 @@ Features:
 <ol><li>Project Showcase: Explore our portfolio of completed projects, highlighting our commitment to quality and innovation in construction.</li>
 <li>Contact Us: Have questions or want to collaborate? Use our contact form to get in touch with us easily</li></ol>
 <br>
-<br>
 Here is the project
 <br>
 <img src="screenshot.png">
