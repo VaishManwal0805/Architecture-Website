@@ -1,0 +1,58 @@
+{%extends "base.html"%}
+{%block title%}Projects{%endblock%}
+{%block content%}
+<div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/images/image22.jpg" class="d-block w-100" alt="..." style="height:646px; width:100%;">
+          </div>
+        </div>
+    </div>
+    <div class="description" style="background-color: rgba(0, 0, 0, 0); flex-direction: column; justify-content: center; align-items: center; width: 100%; height: auto; padding-bottom: 93px; display: flex;">
+        <div class="desc_sec" style="text-align: center; flex-direction: column; align-self: center; align-items: center; max-width: 800px; display: flex">
+          <h1 style="color: var(--royal-blue); margin-top: 98px; margin-bottom: 27px; font-family: Work Sans, sans-serif; font-size: 5em; font-weight: 300; line-height: 1.2em; margin-left:1px;">
+            From Concept to Creation: Our Projects</h1>
+        <div  class="para" style="color: var(--dark-slate-gray-2); text-transform: uppercase; margin-top: 0; margin-bottom: 10px; font-family: Work Sans, sans-serif; font-size: 18px; font-weight: 400; line-height: 30px;">
+          <p>Architectural projects encompass a diverse range of endeavors, each uniquely crafted to meet the specific needs and aspirations of their users. From innovative residential designs that reflect personal lifestyles to dynamic commercial spaces that enhance business productivity, each project is a testament to the art and science of architecture.<br><br> Our approach begins with a deep understanding of the project's context, whether it's a bustling urban landscape or a serene rural setting. We strive to create environments that not only fulfill functional requirements but also inspire and uplift, blending aesthetics with sustainability.<br><br> By integrating modern technologies and timeless design principles, we aim to deliver spaces that foster connection, creativity, and community for generations to come.</p>
+    </div>
+    <div class="nexa" style="margin-top:91px; padding: 19px 20px; background-color: darkgray;"> 
+      <h2 style="font-weight:initial;">"What We Can Create: Tailored Architectural Solutions"</h2>
+      <p style="font-size:larger;">NexaBuild is a versatile construction and architectural company specializing in both residential and commercial projects. Their portfolio includes custom homes, multi-unit residences, and office spaces designed to meet contemporary needs while ensuring sustainability and aesthetic appeal.<br><br> Additionally, NexaBuild takes pride in their renovation and restoration work, revitalizing homes and preserving historic buildings with a blend of modern design and respect for heritage. Committed to delivering precision and efficiency, NexaBuild transforms client visions into reality, offering both functionality and timeless design</p>
+    </div>
+    <section class="projects" style="text-align: center; padding: 180px;">
+      <h1 style="font-size: 2em; margin-bottom: 20px;">Recent Projects</h1>
+      <div class="project-container" style="display: flex; justify-content: center; gap: 104px;">
+          <div class="project-card" style="width: 300px; border-radius: 10px; overflow: hidden; background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+          
+            <img src="static/images/image23.jpg" alt="Northland Rural Haven" style="width: 116%; height: 370px;">
+              <p style="padding: 10px; font-size: 1.2em; font-weight: bold; color: #333;"><a href="{%url 'kindergarten'%}">Aroha Kindergarten</a></p>
+          </div>
+          <div class="project-card" style="width: 300px; border-radius: 10px; overflow: hidden; background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <img src="static/images/image24.jpg" alt="Contemporary Coastal" style="width: 116%; height: 370px;">
+              <p style="padding: 10px; font-size: 1.2em; font-weight: bold; color: #333;"><a href="{%url 'minimalist_arch'%}">Minimalist Architecture</a></p>
+          </div>
+          <div class="project-card" style="width: 300px; border-radius: 10px; overflow: hidden; background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+              <img src="static/images/c1.jpg" alt="Naturally Sustainable" style="width: 100%; height: 358px;">
+              <p style="padding: 10px; font-size: 1.2em; font-weight: bold; color: #333;"><a href="{%url 'classic_cont'%}">Classic Contemporary</a></p>
+          </div>
+      </div>
+  </section>
+  <section class="projects1" style="text-align: center; padding: 9px;">
+    <div class="project-container1" style="display: flex; justify-content: center; gap: 104px;">
+        <div class="project-card1" style="width: 300px; border-radius: 10px; overflow: hidden; background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+        
+          <img src="static/images/l1.jpg" alt="Northland Rural Haven" style="width: 143%; height: 370px;">
+            <p style="padding: 10px; font-size: 1.2em; font-weight: bold; color: #333;"><a href="{%url 'morico_cafe'%}">Morico Cafe</a></p>
+        </div>
+        <div class="project-card" style="width: 300px; border-radius: 10px; overflow: hidden; background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <img src="static/images/r1.jpg" alt="Contemporary Coastal" style="width: 116%; height: 370px;">
+            <p style="padding: 10px; font-size: 1.2em; font-weight: bold; color: #333;"><a href="{%url 'restaurant'%}">Hide & Seek Bar and Restaurant</a></p>
+        </div>
+    </div>
+  </section>
+</div>
+{%endblock%}
+{%block footer_style%}
+margin-bottom:0px;
+{%endblock%}

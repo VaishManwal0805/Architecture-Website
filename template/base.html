@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="{%static 'images/NexaBuild.png'%}">
+    <title>{%block title%}NexaBuild |{%endblock%}</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* Header (navbar), content (flexible), and footer */
+    }
+        .custom-navbar{
+            background-color:black;
+            color:white;
+        }
+        /* For screens larger than 1024px */
+        @media screen and (min-width: 1024px) {
+           /* Add your large-screen-specific styles here */
+        }
+        .container {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+      }
+        
+
+    </style>
+</head>
+<body>
+  <!--NAVBAR PAGE-->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid" >
+          <img src="../static/images/nexa1.png" alt="..." style="width:218px; height:48px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText" style="margin-left:65%;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+      {%block content%}{% endblock %}
+      </div>
+      <div style="background-color: #222; color: white; padding: 20px;margin-top:148px; text-align:center;{%block footer_style%}margin-bottom:0px;{%endblock%}" >
+        <div style="display: flex; justify-content: space-between; padding: 10px;">
+            <div style="flex: 1; margin: 10px;">
+                <h2>Who we are</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus diam nec nisl faucibus, nec efficitur nibh egestas. Integer sed magna sed dolor feugiat blandit at ac nisi. Pellentesque non erat.</p>
+                <p id="slogan" style="margin-top: 20px; font-style: italic; color: #f0f0f0;">"Innovating Spaces, Enhancing Lives"</p> <!-- Dynamic slogan here -->
+            </div>
+            <div style="flex: 1; margin: 10px; text-align: right;">
+                <h4>Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="/home" style="color: #56aaff; text-decoration: none;">Home</a></li>
+                    <li><a href="/projects" style="color: #56aaff; text-decoration: none;">Projects</a></li>
+                    <li><a href="/services" style="color: #56aaff; text-decoration: none;">Our Process and Services</a></li>
+                    <li><a href="/contact" style="color: #56aaff; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1; margin: 10px; text-align: right;">
+                <h4>Social</h4>
+                <a href="#" style="color: #56aaff; text-decoration: none;">Instagram</a>
+            </div>
+            <div style="flex: 1; margin: 10px; text-align: right;">
+                <h4>Contact</h4>
+                <p>507-475-6094</p>
+                <p>nexabuild_arch@gmail.com</p>
+                <p>4671 Sugar Camp Road, Owatonna, Minnesota, 55060</p>
+                <a href="/contact" style="color: #56aaff; text-decoration: none;">Get in Touch ></a>
+            </div>
+        </div>
+        <div style="padding-top: 20px; text-align: center;">
+            <p style="margin: 0;">&copy; 2024 | NexaBuild | All Rights Reserved</p>
+        </div>
+      </div>
+    
+    
+
+</body>
+</html>
