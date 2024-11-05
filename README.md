@@ -11,7 +11,7 @@ Features:
 <br>
 Here is the project
 <br>
-![screenshot](https://github.com/user-attachments/assets/1638c97d-edd5-4b38-b562-30c9832a48e9)
+<img src="screenshot.png">
 
 
 
