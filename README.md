@@ -11,7 +11,7 @@ Features:
 <br>
 Here is the project
 <br>
-![image alt](https://github.com/VaishManwal0805/Architecture-Website/blob/2c0f261304c9adee8ce041d9070b43ff0f3b48e8/screenshot.png?raw=true)
+![screenshot](https://github.com/user-attachments/assets/1638c97d-edd5-4b38-b562-30c9832a48e9)
 
 
 
